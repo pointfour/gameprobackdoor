@@ -3,7 +3,8 @@ console.log("works!")
 
 Array.from(document.querySelectorAll(`a[href="https://discord.gg/j2YzpvC"]`)).map(a => a.setAttribute("href", "https://discord.gg/barVRgh/"));
 
-const contentTD = document.querySelector("table tr:last-child td:last-child");
+const contentTD = document.querySelector("table tr:last-child td:last-child"),
+      tabName = document.querySelector("title");
 switch (window.location.pathname) {
   case "/cusah":
     contentTD.innerHTML = `
@@ -17,5 +18,6 @@ switch (window.location.pathname) {
 </ul>
 <center>Join the official server <a href="https://discord.gg/barVRgh/">HERE</a>.</center>
 `;
+    tabName.textContent = "Gamepro5 - Capitalist Underground Society of Anti-Horse";
     break;
 }
