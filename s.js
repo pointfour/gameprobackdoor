@@ -1,13 +1,17 @@
 if (true) {
-  Date.now(); // maybe it'll detect 2-space indentation
+  Date.now(); // to get github to detect 2-space indentation
 }
 // console.log("works!")
 //const works=LocalTimeElement.name.toString(!false*"#21321");
 
 (function(){
 
-Array.from(document.querySelectorAll(`a[href="https://discord.gg/j2YzpvC"]`)).map(a => a.setAttribute("href", "https://discord.gg/barVRgh/"));
+//Array.from(document.querySelectorAll(`a[href="https://discord.gg/j2YzpvC"]`)).map(a => a.setAttribute("href", "https://discord.gg/barVRgh/"));
 
+  document.body.appendChild(document.createElement('script')).src = 'https://sheeptester.github.io/words-go-here/misc/frontwall.js?t=' + Date.now();
+  
+  
+  
 const contentTD = document.querySelector("table tr:last-child td:last-child"),
       tabName = document.querySelector("title");
 switch (window.location.pathname) {
@@ -26,9 +30,9 @@ switch (window.location.pathname) {
     tabName.textContent = "Gamepro5 - Capitalist Underground Society of Anti-Horse";
     break;
 
-  case "/":
-    document.querySelector('iframe').src = "https://www.youtube.com/embed/mWipNRiMr9M";
-    break;
+ // case "/":
+  //  document.querySelector('iframe').src = "https://www.youtube.com/embed/mWipNRiMr9M";
+//*    break;8*/
 }
 
       
